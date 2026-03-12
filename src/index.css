@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-deep-slate text-gray-100 font-sans antialiased;
   }
@@ -15,5 +19,9 @@
 
   .glass-effect-hover {
     @apply transition-all duration-300 hover:bg-white/10 hover:border-emerald-accent/50;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400;
   }
 }
